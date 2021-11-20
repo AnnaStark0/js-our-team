@@ -5,29 +5,72 @@
 // Prendendo come riferimento il layout di esempio presente nell'html, stampiamo tutte le card del nostro team.
 // BONUS: Utilizziamo poi gli input presenti nella pagina per permettere all'utente di aggiungere nuovi membri del team.
 
-const team = [{
-        'nome': 'Angela Caroll'
-        'ruolo': 'Chief Editor',
-        'foto': 'img.src="angela-caroll-chief-editor.jpg"'
+
+//Creare Array di oggetti
+
+const team = [
+    {
+        'pic': 'img/wayne-barnett-founder-ceo.jpg'
+        'name': 'Wayne Barnett',
+        'position': 'Founder & CEO',
+        
     },
     {
-        'nome': 'Walter Gordon'
-        'ruolo': 'Office Manager',
-        'foto': ''
+        'pic': 'img/angela-caroll-chief-editor.jpg'
+        'name': 'Angela Caroll',
+        'position': 'Chief Editor',
+        
     },
     {
-        'nome': 'Angela Lopez'
-        'ruolo': 'Social Media Manager',
-        'foto': ''
+        'pic': 'img/walter-gordon-office-manager.jpg'
+        'name': 'Walter Gordon',
+        'position': 'Office Manager',
+        
     },
     {
-        'nome': 'Scott Estrada'
-        'ruolo': 'Developer',
-        'foto': ''
+        'pic': 'img/angela-lopez-social-media-manager.jpg'
+        'name': 'Angela Lopez',
+        'position': 'Social Media Manager',
+        
     },
     {
-        'nome': 'Barbara Ramos'
-        'ruolo': 'Graphic Designer',
-        'foto': ''
+        'pic': 'img/scott-estrada-developer.jpg'
+        'name': 'Scott Estrada',
+        'position': 'Developer',
+        
+    },
+    {
+        'pic': 'img/barbara-ramos-graphic-designer.jpg'
+        'name': 'Barbara Ramos',
+        'position': 'Graphic Designer',
+        
     },
 ]
+
+console.log(team);
+
+//Creazione card
+
+// function addCard (card) {
+    
+//     let team = '';
+
+//     for (let i = 0; i < card.length; i++) {
+
+//         team += 
+//         `
+//         <div class="team-card">
+//             <div class="card-image">
+//                 <img src=${array[i]['image']} alt=${card[i]['name']}/>
+//             </div>
+//             <div class="card-text">
+//                 <h3>${card[i]['name']}</h3>
+//                 <p>${card[i]['position']}</p>
+//             </div>
+//         </div>
+//         `;
+//     }
+   
+
+//     document.querySelector('.team-container').innerHTML = addCard(team);
+}
