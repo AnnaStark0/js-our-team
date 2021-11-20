@@ -10,40 +10,39 @@
 
 const team = [
     {
-        'pic': 'img/wayne-barnett-founder-ceo.jpg'
-        'name': 'Wayne Barnett',
-        'position': 'Founder & CEO',
-        
+        pic: 'img/wayne-barnett-founder-ceo.jpg',
+        name: 'Wayne Barnett',
+        position: 'Founder & CEO',
     },
+
     {
-        'pic': 'img/angela-caroll-chief-editor.jpg'
-        'name': 'Angela Caroll',
-        'position': 'Chief Editor',
-        
+        pic: 'img/angela-caroll-chief-editor.jpg',
+        name: 'Angela Caroll',
+        position: 'Chief Editor',
     },
+
     {
-        'pic': 'img/walter-gordon-office-manager.jpg'
-        'name': 'Walter Gordon',
-        'position': 'Office Manager',
-        
+        pic: 'img/walter-gordon-office-manager.jpg',
+        name: 'Walter Gordon',
+        position: 'Office Manager',
     },
+
     {
-        'pic': 'img/angela-lopez-social-media-manager.jpg'
-        'name': 'Angela Lopez',
-        'position': 'Social Media Manager',
-        
+        pic: 'img/angela-lopez-social-media-manager.jpg',
+        name: 'Angela Lopez',
+        position: 'Social Media Manager',
     },
+
     {
-        'pic': 'img/scott-estrada-developer.jpg'
-        'name': 'Scott Estrada',
-        'position': 'Developer',
-        
+        pic: 'img/scott-estrada-developer.jpg',
+        name: 'Scott Estrada',
+        position: 'Developer',
     },
+
     {
-        'pic': 'img/barbara-ramos-graphic-designer.jpg'
-        'name': 'Barbara Ramos',
-        'position': 'Graphic Designer',
-        
+        pic: 'img/barbara-ramos-graphic-designer.jpg',
+        name: 'Barbara Ramos',
+        position: 'Graphic Designer',
     },
 ]
 
@@ -51,26 +50,31 @@ console.log(team);
 
 //Creazione card
 
-// function addCard (card) {
-    
-//     let team = '';
-
-//     for (let i = 0; i < card.length; i++) {
-
-//         team += 
-//         `
-//         <div class="team-card">
-//             <div class="card-image">
-//                 <img src=${array[i]['image']} alt=${card[i]['name']}/>
-//             </div>
-//             <div class="card-text">
-//                 <h3>${card[i]['name']}</h3>
-//                 <p>${card[i]['position']}</p>
-//             </div>
-//         </div>
-//         `;
-//     }
+function addCard (array) {
    
+    let cardContent = '';
 
-//     document.querySelector('.team-container').innerHTML = addCard(team);
+    for (let i = 0; i < array.length; i++) {
+
+        cardContent += 
+        `
+        <div class="team-card">
+            <div class="card-image">
+                <img src=${array[i]['image']} alt=${array[i]['name']}/>
+            </div>
+            <div class="card-text">
+                <h3>${array[i]['name']}</h3>
+                <p>${array[i]['position']}</p>
+            </div>
+        </div>
+        `;
+    }
+
+    return cardContent;
+
 }
+
+document.querySelector('.team-container').innerHTML = addCard(team);
+
+
+//Momento di sconforto .-. 
