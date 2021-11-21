@@ -6,41 +6,41 @@
 // BONUS: Utilizziamo poi gli input presenti nella pagina per permettere all'utente di aggiungere nuovi membri del team.
 
 
-//Creare Array di oggetti
+// -- Creare Array di oggetti --
 
 const team = [
     {
-        pic: 'img/wayne-barnett-founder-ceo.jpg',
+        image: 'img/wayne-barnett-founder-ceo.jpg',
         name: 'Wayne Barnett',
         position: 'Founder & CEO',
     },
 
     {
-        pic: 'img/angela-caroll-chief-editor.jpg',
+        image: 'img/angela-caroll-chief-editor.jpg',
         name: 'Angela Caroll',
         position: 'Chief Editor',
     },
 
     {
-        pic: 'img/walter-gordon-office-manager.jpg',
+        image: 'img/walter-gordon-office-manager.jpg',
         name: 'Walter Gordon',
         position: 'Office Manager',
     },
 
     {
-        pic: 'img/angela-lopez-social-media-manager.jpg',
+        image: 'img/angela-lopez-social-media-manager.jpg',
         name: 'Angela Lopez',
         position: 'Social Media Manager',
     },
 
     {
-        pic: 'img/scott-estrada-developer.jpg',
+        image: 'img/scott-estrada-developer.jpg',
         name: 'Scott Estrada',
         position: 'Developer',
     },
 
     {
-        pic: 'img/barbara-ramos-graphic-designer.jpg',
+        image: 'img/barbara-ramos-graphic-designer.jpg',
         name: 'Barbara Ramos',
         position: 'Graphic Designer',
     },
@@ -48,7 +48,7 @@ const team = [
 
 console.log(team);
 
-//Creazione card
+// -- Creazione card --
 
 function addCard (array) {
    
@@ -77,4 +77,3 @@ function addCard (array) {
 document.querySelector('.team-container').innerHTML = addCard(team);
 
 
-//Momento di sconforto .-. 
